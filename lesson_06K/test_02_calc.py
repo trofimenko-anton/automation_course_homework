@@ -29,7 +29,7 @@ def test_calc():
         # Сохраняем элемент с результатом
         screen = driver.find_element(By.CLASS_NAME, "screen")
 
-        # Ждём, пока в этом элементе не появится значение "15"
+        # Ждём, пока в этом элементе не появится текст "15"
         wait.until(
             EC.text_to_be_present_in_element(
                 (By.CLASS_NAME, "screen"), "15"
